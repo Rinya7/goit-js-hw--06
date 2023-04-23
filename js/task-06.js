@@ -14,5 +14,3 @@ function readerInputChangeBlur(event) {
     refsInput.classList.add("valid");
   }
 }
-
-document.createElement;
