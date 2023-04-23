@@ -17,10 +17,14 @@ const list = document.querySelector(".gallery");
 //console.log(list);
 
 const makeImg = images
-  .map((image) => `<img src=\"${image.url}\" alt=\" ${image.alt} \" />`)
+  .map(
+    (image) =>
+      `<img src=\"${image.url}\" alt=\" ${image.alt} \" width= 100% height= 1200/>`
+  )
   .join("");
 //console.log(makeImg);
 
 list.insertAdjacentHTML("beforeend", makeImg);
+//list.before(makeImg);
 
 console.log(list);
