@@ -36,5 +36,10 @@ function createBoxes(a) {
   }
 }
 
+onButtonDestroy.addEventListener("click", destroyBoxes);
+function destroyBoxes(a) {
+  InsrtsBoxesDivCreated.innerHTML = "";
+}
+
 //=====================END================
 //Активируем считывание числа и создание дивов после нажатия кнопки================
