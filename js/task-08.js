@@ -12,8 +12,8 @@ function callback(event) {
 
   if (email.value === "" || password.value === "") {
     alert("Необхідно заповнити всі поля");
+  } else {
+    console.log(`email: ${email.value}, Paswords: ${password.value}`);
+    form.reset();
   }
-
-  console.log(`email: ${email.value}, Paswords: ${password.value}`);
-  form.reset();
 }
