@@ -39,6 +39,7 @@ function createBoxes(a) {
 onButtonDestroy.addEventListener("click", destroyBoxes);
 function destroyBoxes(a) {
   InsrtsBoxesDivCreated.innerHTML = "";
+  inputNumberOfElements.value = "";
 }
 
 //=====================END================
