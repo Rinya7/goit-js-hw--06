@@ -12,7 +12,6 @@ const refs = {
 refs.btnChangeColot.addEventListener("click", changecolor);
 
 function changecolor(event) {
-  const color = getRandomHexColor();
-  refs.bodyColor.style.backgroundColor = color;
-  refs.nameOfBodyColor.textContent = color;
+  refs.bodyColor.style.backgroundColor = getRandomHexColor();
+  refs.nameOfBodyColor.textContent = getRandomHexColor();
 }
