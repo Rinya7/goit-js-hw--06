@@ -25,6 +25,5 @@ const makeImg = images
 //console.log(makeImg);
 
 list.insertAdjacentHTML("beforeend", makeImg);
-//list.before(makeImg);
 
 console.log(list);
