@@ -3,6 +3,7 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
 const refs = {
   btnChangeColot: document.querySelector(".change-color"),
   bodyColor: document.body,
@@ -12,6 +13,7 @@ const refs = {
 refs.btnChangeColot.addEventListener("click", changecolor);
 
 function changecolor(event) {
-  refs.bodyColor.style.backgroundColor = getRandomHexColor();
-  refs.nameOfBodyColor.textContent = getRandomHexColor();
+  let color = getRandomHexColor();
+  refs.bodyColor.style.backgroundColor = color;
+  refs.nameOfBodyColor.textContent = color;
 }
