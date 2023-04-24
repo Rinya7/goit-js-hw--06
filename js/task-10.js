@@ -32,7 +32,7 @@ function createBoxes(a) {
     massDiv.style.height = `${size}px`;
     massDiv.style.width = `${size}px`;
     massDiv.style.backgroundColor = getRandomHexColor();
-    InsrtsBoxesDivCreated.append(massDiv);
+    insrtsBoxesDivCreated.append(massDiv);
   }
 }
 
