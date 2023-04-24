@@ -12,7 +12,11 @@ function callback(event) {
   if (email.value === "" || password.value === "") {
     alert("Необхідно заповнити всі поля");
   } else {
-    console.log(`emeil: ${email.value}, password: ${password.value}`);
+    const dataObject = {
+      email: email.value,
+      password: password.value,
+    };
+    console.log(dataObject);
     form.reset();
   }
 }
