@@ -19,10 +19,11 @@ const list = document.querySelector(".gallery");
 const makeImg = images
   .map(
     (image) =>
-      `<img src=\"${image.url}\" alt=\" ${image.alt} \" width= 100% height= 1200/>`
+      `<img src=\"${image.url}\" alt=\" ${image.alt} \" width= 1200 height= 800/> `
   )
   .join("");
-//console.log(makeImg);
+list.style.display = "flex";
+list.style.flexDirection = "column ";
 
 list.insertAdjacentHTML("beforeend", makeImg);
 

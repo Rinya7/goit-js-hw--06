@@ -8,13 +8,17 @@ const inputNumberOfElements = document.querySelector("input");
 const insrtsBoxesDivCreated = document.querySelector("#boxes");
 const onButtonCreated = document.querySelector("button[data-create]");
 const onButtonDestroy = document.querySelector("button[data-destroy]");
+const maxRange = inputNumberOfElements.max;
+const minRange = inputNumberOfElements.min;
+let number = 0;
 
 inputNumberOfElements.addEventListener("input", outInputNumber);
 //======считываем введеное число====== и передаем значение в функцию создания дивов
-let number = 0;
+
 function outInputNumber(event) {
   number = event.target.value;
 }
+
 //По клику запускаем создание дивов с значением получеого в импуте числа
 onButtonCreated.addEventListener("click", readNumber);
 function readNumber() {
